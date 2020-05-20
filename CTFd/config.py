@@ -68,7 +68,7 @@ class Config(object):
     )
     REDIS_URL = os.getenv("REDIS_URL")
 
-    SQLALCHEMY_DATABASE_URI = postgres://prfxvcyapaaxza:76c17279af59cde2ccf541f8658da72f87309aaf510955454b62fe7249534c6d@ec2-34-195-169-25.compute-1.amazonaws.com:5432/d32lgg0b6mf9k6
+    SQLALCHEMY_DATABASE_URI = DATABASE_URL
 
     CACHE_REDIS_URL = REDIS_URL
     if CACHE_REDIS_URL:
